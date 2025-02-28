@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz de Perguntas 1</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f4f7;
+        }
+
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+
+        .question {
+            margin: 20px 0;
+        }
+
+        label {
+            display: inline-flex; /* Usando inline-flex para alinhar o texto ao lado da opção */
+            align-items: center;  /* Alinha o conteúdo de forma vertical */
+            margin: 10px 0;
+        }
+
+        input[type="radio"] {
+            margin-right: 10px; /* Adiciona um espaço à direita dos radio buttons */
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+            display: block;
+            margin: 20px auto;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        .result {
+            text-align: center;
+            font-size: 20px;
+            margin-top: 20px;
+        }
+
+        /* Para a imagem */
+        header img {
+            width: 150px;
+            height: 150px;
+            border: 5px solid rgb(255, 255, 255);
+            display: block;
+            margin: 0 auto;
+        }
+
+        footer {
+            text-align: center;
+            font-size: 14px;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="center">
+        <img src="./img/images (34 .png" alt="Imagem do Zoro">
+    </div>
+</header>
+
+<main>
+    <section>
+        <h3>Zoro</h3>
+        <p>Informações sobre o personagem Zoro de One Piece.</p>
+    </section>
+
+    <!-- Quiz 1 -->
+    <section>
+        <h3>Quiz do Zoro 1</h3>
+        <div class="container">
+            <form id="quizForm1">
+                <div class="question">
+                    <p>1. Qual é o nome completo de Zoro?</p>
+                    <label>
+                        <input type="radio" id="roronoa" name="q1" value="Roronoa Zoro">
+                        Roronoa Zoro
+                    </label>
+
+                    <label>
+                        <input type="radio" id="sword" name="q1" value="Sword Zoro">
+                        Sword Zoro
+                    </label>
+
+                    <label>
+                        <input type="radio" id="zoro" name="q1" value="Zoro">
+                        Zoro
+                    </label>
+                </div>
+
+                <div class="question">
+                    <p>2. Qual é o objetivo de Zoro?</p>
+                    <label>
+                        <input type="radio" id="becomeSwordKing" name="q2" value="Tornar-se o maior espadachim do mundo">
+                        Tornar-se o maior espadachim do mundo
+                    </label>
+
+                    <label>
+                        <input type="radio" id="findTreasure" name="q2" value="Encontrar o maior tesouro do mundo">
+                        Encontrar o maior tesouro do mundo
+                    </label>
+
+                    <label>
+                        <input type="radio" id="joinCrew" name="q2" value="Se juntar à tripulação do Luffy">
+                        Se juntar à tripulação do Luffy
+                    </label>
+                </div>
+
+                <div class="question">
+                    <p>3. Qual é a espada que Zoro usa como sua espada principal?</p>
+                    <label>
+                        <input type="radio" id="sandai" name="q3" value="Sandai Kitetsu">
+                        Sandai Kitetsu
+                    </label>
+
+                    <label>
+                        <input type="radio" id="wado" name="q3" value="Wado Ichimonji">
+                        Wado Ichimonji
+                    </label>
+
+                    <label>
+                        <input type="radio" id="shusui" name="q3" value="Shusui">
+                        Shusui
+                    </label>
+                </div>
+
+                <button type="submit">Verificar Respostas</button>
+            </form>
+
+            <div id="result1" class="result"></div>
+        </div>
+    </section>
+
+    <!-- Quiz 2 -->
+    <section>
+        <h3>Quiz do Zoro 2</h3>
+        <div class="container">
+            <form id="quizForm2">
+                <div class="question">
+                    <p>1. Qual é a função dele no bando?</p>
+                    <label>
+                        <input type="radio" id="imediato" name="q1" value="imediato">
+                        imediato
+                    </label>
+
+                    <label>
+                        <input type="radio" id="se" name="q1" value="apenas espadachim">
+                        apenas espadachim
+                    </label>
+
+                    <label>
+                        <input type="radio" id="cz" name="q1" value="cozinheiro">
+                        cozinheiro
+                    </label>
+                </div>
+
+                <div class="question">
+                    <p>2. Qual é a idade dele?</p>
+                    <label>
+                        <input type="radio" id="num" name="q2" value="21">
+                        21
+                    </label>
+
+                    <label>
+                        <input type="radio" id="25" name="q2" value="25">
+                        25
+                    </label>
+
+                    <label>
+                        <input type="radio" id="maisdeMil" name="q2" value="mais de mil">
+                        mais de mil
+                    </label>
+                </div>
+
+                <div class="question">
+                    <p>3. Quem treinou ele?</p>
+                    <label>
+                        <input type="radio" id="daVinci" name="q3" value="Dracule Mihawk">
+                        Dracule Mihawk
+                    </label>
+
+                    <label>
+                        <input type="radio" id="Shimotsuki Kuzaburo" name="q3" value="Shimotsuki Kuzaburo">
+                        Shimotsuki Kuzaburo
+                    </label>
+
+                    <label>
+                        <input type="radio" id="dragon" name="q3" value="dragon">
+                        dragon
+                    </label>
+                </div>
+
+                <button type="submit">Verificar Respostas</button>
+            </form>
+
+            <div id="result2" class="result"></div>
+        </div>
+    </section>
+</main>
+
+<footer>
+    <p>&copy; 2025 Quiz do Zoro. Todos os direitos reservados.</p>
+</footer>
+
+<script>
+    // Quiz 1
+    document.getElementById('quizForm1').addEventListener('submit', function(event) {
+        event.preventDefault();  // Impede o envio do formulário
+
+        // Perguntas e respostas corretas para o Quiz 1
+        const correctAnswers1 = {
+            q1: 'Roronoa Zoro',
+            q2: 'Tornar-se o maior espadachim do mundo',
+            q3: 'Wado Ichimonji'
+        };
+
+        // Contador de respostas corretas
+        let score1 = 0;
+
+        // Verifica as respostas para o Quiz 1
+        for (let question in correctAnswers1) {
+            const selectedAnswer = document.querySelector(`input[name="${question}"]:checked`);
+            if (selectedAnswer && selectedAnswer.value === correctAnswers1[question]) {
+                score1++;
+            }
+        }
+
+        // Exibe o resultado do Quiz 1
+        const resultDiv1 = document.getElementById('result1');
+        resultDiv1.innerHTML = `Você acertou ${score1} de 3 perguntas.`;
+    });
+
+    // Quiz 2
+    document.getElementById('quizForm2').addEventListener('submit', function(event) {
+        event.preventDefault();  // Impede o envio do formulário
+
+        // Perguntas e respostas corretas para o Quiz 2
+        const correctAnswers2 = {
+            q1: 'imediato',
+            q2: '21',
+            q3: 'Dracule Mihawk'
+        };
+
+        // Contador de respostas corretas
+        let score2 = 0;
+
+        // Verifica as respostas para o Quiz 2
+        for (let question in correctAnswers2) {
+            const selectedAnswer = document.querySelector(`input[name="${question}"]:checked`);
+            if (selectedAnswer && selectedAnswer.value === correctAnswers2[question]) {
+                score2++;
+            }
+        }
+
+        // Exibe o resultado do Quiz 2
+        const resultDiv2 = document.getElementById('result2');
+        resultDiv2.innerHTML = `Você acertou ${score2} de 3 perguntas.`;
+    });
+</script>
+
+</body>
+</html>
+
